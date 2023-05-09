@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  db:
+    image: jonathandevah/todo-environment:mysqldb
+    container_name: docker-db-1
+    ports:
+      - "3390:3306"
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: lease_tech
+    command: --init-file /docker-entrypoint-initdb.d/schema.sql
+
+volumes:
+  db_data:

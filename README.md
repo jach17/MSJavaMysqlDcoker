@@ -24,10 +24,9 @@
 
 
 ## Misma red dentro de docker
-Para crear una red dentro de docker utiliza el siguiente comando
-* docker network create NETWORK_NAME
-Para conectar un contenedor a una red utiliza
-* docker network connect NETWORK_NAME CONTAINER_NAME
-Para asegurarte de que estan dentro de la misma red utiliza:
-* docker network inspect NETWORK_NAME
-
+* Para crear una red dentro de docker utiliza el siguiente comando: 
+    >docker network create NETWORK_NAME
+* Para conectar un contenedor a una red utiliza:
+    >docker network connect NETWORK_NAME CONTAINER_NAME
+* Para asegurarte de que estan dentro de la misma red utiliza:
+    >docker network inspect NETWORK_NAME

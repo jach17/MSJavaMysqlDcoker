@@ -36,5 +36,5 @@
 * Asegurate de que en el espacio NETWORK_NAME coloques el nombre de una red existente en tu ambiente docker ya que en esta misma red se está conectando la base de datos
 
 ### Repositorio en DockerHub: 
-    > https://hub.docker.com/r/jonathandevah/todo-environment 
+    https://hub.docker.com/r/jonathandevah/todo-environment 
 
